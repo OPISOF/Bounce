@@ -7,16 +7,38 @@ body {
 }
 .header {
     width: 100%;
-    height: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: black;
 }
 
 .logo {
-    width:  80px;
+    width: 100px;
     height: auto;
+    margin-left: 24px;
 }
 
 .d1 {
     width: 100%;
     height: 100vh;
 }
+
+.iconBars {
+    font-size: 4rem;
+}
+
+.MenuBars {
+    background: none;
+    border: none;
+    width: 80px;
+    height: auto;
+}
+
+.h1Text {
+    color: white;
+    font-family: sans-serif;
+    font-size: 4rem;
+}
+
