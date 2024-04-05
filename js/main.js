@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     $('.btn').click(function() {
         $('.message').text('Button clicked!');
@@ -9,13 +11,22 @@ btn.on('click', function() {
   $(this).toggleClass('active not-active');
 });
 
-let btnBar = document.getElementById('btnBars');
+//let menu = $('menu');
+//
+//function dropDown(element){
+//    if(element.style.display === 'none'){
+//        element.style.display = 'block';
+//    }
+//    else{
+//        element.style.display = 'none';
+//    }
+//};
 
-function dropDown(element) {
-    
-}
+//btn.on('click', function(){
+//    dropDown(menu);
+//});
 
-btnBar.addEventListener('click', function() {
-    dropDown(btnBar);
-});
+
+
+
 
