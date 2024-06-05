@@ -51,7 +51,7 @@ body {
     top: auto;
     right: 0;
     width: 20%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(145, 145, 145);
     border-bottom-left-radius: 12px;
 }
 
@@ -60,8 +60,62 @@ body {
     padding-top: 32px;
     margin-left: 32px;
     font-size: 3.2rem;
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
+
+.slider {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-slide {
+    max-width: 60vw;
+    max-height: 80vh;
+    display: block;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: slideFromLeft 0.5s ease-in-out;
+    left: -100%;
+}
+
+.slide.act {
+    display: flex;
+    animation: slideToCenter 0.5s ease-in-out;
+    left: 0;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slideToCenter {
+    0% {
+        left: 100%;
+    }
+    99.9% {
+        left: 0;
+    }
+    100% {
+        left: 0;
+        display: flex;
+    }
+}

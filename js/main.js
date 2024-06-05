@@ -17,6 +17,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var slides = document.querySelectorAll('.slide');
+    var currentSlide = 0;
+    slides[currentSlide].classList.add('act');
+
+    function changeSlide() {
+        slides[currentSlide].classList.remove('act');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('act');
+    }
+
+    setInterval(changeSlide, 5000);
+});
+        
+
 
 
 
